@@ -3,7 +3,7 @@ import { FileImage } from 'lucide-react'
 
 export default function Hero() {
     return (
-        <div className='grid w-full h-screen grid-cols-2 mt-4'>
+        <div className='grid w-full h-screen grid-cols-2 gap-16 mt-4'>
             <div className="flex items-center ">
                 <div className="space-y-8">
                     <div className="font-bold text-8xl">Rabithah Ma&apos;ahid Islamiyah</div>
@@ -11,7 +11,7 @@ export default function Hero() {
                     <button className='px-12 btn btn-primary'>Portal Pesantren</button>
                 </div>
             </div>
-            <div className="flex items-center justify-center bg-base-300">
+            <div className="flex items-center justify-center bg-slate-300">
                 <FileImage className="w-24 h-24 text-gray-400" />
             </div>
         </div>
