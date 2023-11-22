@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <body className={inter.className}>
         <Header />
-        <div className="px-28">
+        <div className="px-28 mt-16">
           {children}
         </div>
         <Footer />

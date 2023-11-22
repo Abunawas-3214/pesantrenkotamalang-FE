@@ -4,7 +4,7 @@ import { Search } from "lucide-react"
 
 export default function Header() {
     return (
-        <nav className='fixed top-0 w-full px-16 bg-white shadow-sm navbar'>
+        <nav className='fixed top-0 z-10 w-full px-16 bg-white shadow-sm navbar'>
             <div className="flex-1">
                 <Link href="/">
                     <Image src="/apple.svg" alt="logo" width={40} height={40} />
@@ -13,7 +13,7 @@ export default function Header() {
             <div className="navbar-center">
                 <div className="space-x-12">
                     <Link href="/" className="text-lg font-semibold capitalize">Beranda</Link>
-                    <Link href="/" className="text-lg font-semibold capitalize">Portal</Link>
+                    <Link href="/pesantren" className="text-lg font-semibold capitalize">Portal</Link>
                     <Link href="/" className="text-lg font-semibold capitalize">Berita</Link>
                 </div>
 

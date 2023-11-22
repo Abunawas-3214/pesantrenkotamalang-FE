@@ -3,7 +3,7 @@ import { FileImage } from 'lucide-react'
 
 export default function Hero() {
     return (
-        <div className='grid w-full h-screen grid-cols-2 gap-16 mt-4'>
+        <div className='grid w-full h-screen grid-cols-2 gap-16'>
             <div className="flex items-center ">
                 <div className="space-y-8">
                     <div className="font-bold text-8xl">Rabithah Ma&apos;ahid Islamiyah</div>
