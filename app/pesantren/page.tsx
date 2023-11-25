@@ -11,10 +11,9 @@ const PesantrenPage = () => {
                     Cari
                 </button>
             </div>
-            <div className='mt-12 flex gap-20'>
+            <div className='flex gap-16 mt-12'>
                 <Filter />
-                <div className='flex flex-wrap w-5/6 gap-8'>
-                    <CardPesantren />
+                <div className='flex flex-wrap justify-center w-5/6 gap-8'>
                     <CardPesantren />
                     <CardPesantren />
                     <CardPesantren />

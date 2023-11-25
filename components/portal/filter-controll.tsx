@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Filter() {
     return (
-        <div className='w-1/6 h-fit px-4 py-8 space-y-8 border border-gray-300'>
+        <div className='sticky hidden w-1/6 px-4 py-8 space-y-8 border border-gray-300 lg:block top-24 h-fit'>
             <div>
                 <h4 className='font-bold'>Gender</h4>
                 <div className='space-x-2'>
