@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from '@/components/theme-provider'
 import Header from '@/components/site-header'
 import Footer from '@/components/site-footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+})
 
 export const metadata: Metadata = {
   title: 'Pesantren Kota Malang',
@@ -19,9 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="light">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Header />
-        <div className="px-28 mt-16">
+        <div className="px-28">
           {children}
         </div>
         <Footer />

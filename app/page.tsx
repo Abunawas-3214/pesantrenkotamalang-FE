@@ -1,11 +1,11 @@
 import Content from "@/components/content-section";
-import Hero from "@/components/hero-section";
+import HeroSection from "@/components/landingPage/hero-section";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <Content />
+      <HeroSection />
+      {/* <Content /> */}
     </main>
   )
 }

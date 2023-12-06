@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 
+@layer components {
+  .button {
+    background-color: #037C3C;
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 400;
+    color: white;
+  }
+
+  .button:hover {
+    background-color: #026634;
+    transition: all 0.2s;
+  }
+}
+
 :root {
   /* Your default theme */
   --background: white;
