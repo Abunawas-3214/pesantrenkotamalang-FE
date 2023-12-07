@@ -17,6 +17,18 @@
     background-color: #026634;
     transition: all 0.2s;
   }
+
+  .search {
+    padding: 0.5rem 2rem;
+    background-color: white;
+    border-radius: 0%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .search:focus {
+    outline-color: #037C3C;
+  }
 }
 
 :root {
