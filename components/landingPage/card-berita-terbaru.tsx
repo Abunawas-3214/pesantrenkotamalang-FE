@@ -4,7 +4,7 @@ import CardBeritaTerbaruPattern from './card-berita-terbaru-pattern'
 export default function CardBeritaTerbaru() {
     return (
         <div className='h-full transition-all duration-200 hover:shadow-xl'>
-            <div className='overflow-hidden bg-blue-200 h-2/5'>
+            <div className='overflow-hidden h-2/5'>
                 <div className='relative flex items-center w-full h-32'>
                     <Image
                         src="/images/beritaTerbaru.jpg"

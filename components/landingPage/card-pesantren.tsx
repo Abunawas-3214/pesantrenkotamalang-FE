@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function CardPesantren() {
     return (
-        <div className='relative h-[448px] w-[288px] group bg-green-300 overflow-hidden hover:-translate-y-1 hover:shadow-2xl transition-all duration-200'>
+        <div className='relative h-[448px]  w-full max-w-[368px] group bg-green-300 overflow-hidden hover:-translate-y-1 hover:shadow-2xl transition-all duration-200'>
             <div className='h-full overflow-hidden bg-gray-700'>
                 <Image
                     src="/images/alhikam.jpg"

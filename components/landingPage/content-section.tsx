@@ -13,7 +13,7 @@ export default function ContentSection() {
             <div className='text-center'>
                 <h4 className='mb-2 text-2xl font-semibold text-black'>Daftar <span className='text-primary'>Pesantren</span></h4>
                 <h5 className='text-lg font-normal text-stone-500'>Berikut Beberapa Daftar Pesantren di Kota Malang</h5>
-                <div className='flex justify-between mt-8'>
+                <div className='flex justify-between mt-8 gap-8'>
                     <CardPesantren />
                     <CardPesantren />
                     <CardPesantren />

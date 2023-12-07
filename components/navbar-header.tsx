@@ -8,10 +8,10 @@ export default function Navbar({ className, ...props }: React.HTMLAttributes<HTM
                 <Link href="/" className="font-medium">
                     Beranda
                 </Link>
-                <Link href="/" className="">
+                <Link href="/pesantren" className="">
                     Portal
                 </Link>
-                <Link href="/" className="">
+                <Link href="/berita" className="">
                     Berita
                 </Link>
             </nav>
