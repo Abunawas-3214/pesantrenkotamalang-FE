@@ -1,36 +1,50 @@
-import { FileImage, MapPin, Users, Star, Share2 } from "lucide-react"
+import { Book, MapPin, User, Star, Share2 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import CardPesantrenPatter from "./card-pesantren-pattern"
 
 export default function CardPesantren() {
     return (
-        <div className='w-56 border border-gray-300 h-fit'>
-            <div className='flex items-center justify-center bg-gray-300 h-36'>
-                <FileImage className="w-10 h-10 text-gray-400" />
+        <div className='relative h-[448px] w-full max-w-[288px] hover:-translate-y-1 hover:shadow-2xl transition-all duration-200'>
+            <div className="relative h-3/5 w-full overflow-hidden">
+                <Image
+                    src="/images/alhikam.jpg"
+                    alt="pesantren"
+                    height={2000}
+                    width={2000}
+                    className="w-full h-full object-cover"
+                />
+                <div className="absolute top-0 h-full w-full bg-gradient-to-b from-black/60 to-black/10 p-6 " >
+                    <div className='text-center text-white'>
+                        <h6 className='text-2xl font-semibold'>Al-Hikam</h6>
+                        <p className='text-lg font-normal'>Lowokwaru</p>
+                    </div>
+                </div>
             </div>
-            <div className="flex flex-col gap-8 p-4 h-fit">
-                <div className="flex items-center justify-start gap-2">
-                    <Image src="/apple.svg" alt="logo" width={24} height={24} />
-                    <h4 className="font-bold">Pesantren Al-Hikam</h4>
-                </div>
-                <div className="grid items-center grid-cols-6 grow">
-
-                    <MapPin className="w-4 h-4 text-black" />
-                    <p className="col-span-5 line-clamp-2">Jl. Jengger Ayam No. 25, Lowokwaru, Kota Malang</p>
-                    <Users className="w-4 h-4 text-black" />
-                    <p className="col-span-5">Putra</p>
-                    <Star className="w-4 h-4 text-black" />
-                    <p className="col-span-5">Kitab, Tahfidz</p>
-                </div>
-                <div className="flex justify-between align-bottom">
-                    <button className="flex items-center justify-center w-8 h-8 border border-gray-300">
-                        <Share2 className="w-4 h-4 text-gray-400" />
-                    </button>
-                    <Link href="/pesantren/al-hikam">
-                        <button className="h-8 px-2 text-white rounded-md w-fit bg-primary">
-                            Detail
-                        </button>
-                    </Link>
+            <div className="relative h-2/5 w-full bg-green-300 overflow-hidden">
+                <CardPesantrenPatter />
+                <div className='absolute top-0 flex flex-col justify-between py-6 px-5 h-full w-full'>
+                    <div className="text-white text-lg font-normal">
+                        <div className="block">
+                            <MapPin className="inline mr-2" />
+                            <p className="inline">Lowokwaru</p>
+                        </div>
+                        <div className="block">
+                            <User className="inline mr-2" />
+                            <p className="inline">Putra</p>
+                        </div>
+                        <div className="block">
+                            <Book className="inline mr-2" />
+                            <p className="inline">Kitab</p>
+                        </div>
+                    </div>
+                    <div className="flex justify-end">
+                        <Link href="/pesantren/alhikam">
+                            <button className="button hover:bg-white hover:text-primary">
+                                Detail
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

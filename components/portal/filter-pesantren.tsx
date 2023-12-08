@@ -1,18 +1,21 @@
-import React from 'react'
+import { cn } from "@/lib/utils"
 
-export default function Filter() {
+export default function FilterPesantren({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
     return (
-        <div className='sticky hidden w-1/6 px-4 py-8 space-y-8 border border-gray-300 lg:block top-24 h-fit'>
-            <div>
-                <h4 className='font-bold'>Gender</h4>
-                <div className='space-x-2'>
-                    <input type="checkbox" />
-                    <label htmlFor="">Putra</label>
+        <div className={cn("px-12 py-8 shadow-xl text-stone-500 text-lg font-medium space-y-8", className)} {...props}>
+            <div className="space-y-4">
+                <h4 className='font-bold text-black'>Gender</h4>
+                <div className="space-y-2">
+                    <div className='space-x-2'>
+                        <input type="checkbox" />
+                        <label htmlFor="">Putra</label>
+                    </div>
+                    <div className='space-x-2'>
+                        <input type="checkbox" />
+                        <label htmlFor="">Putri</label>
+                    </div>
                 </div>
-                <div className='space-x-2'>
-                    <input type="checkbox" />
-                    <label htmlFor="">Putri</label>
-                </div>
+
             </div>
             <div>
                 <h4 className='font-bold'>Program</h4>

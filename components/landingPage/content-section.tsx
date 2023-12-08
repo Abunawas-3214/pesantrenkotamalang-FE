@@ -8,7 +8,7 @@ export default function ContentSection() {
     return (
         <div className='py-32 space-y-24'>
             <div className='flex items-center justify-center'>
-                <SearchbarPesantren className='w-3/5 h-16 bg-amber-200' />
+                <SearchbarPesantren className='w-3/5 h-16' />
             </div>
             <div className='text-center'>
                 <h4 className='mb-2 text-2xl font-semibold text-black'>Daftar <span className='text-primary'>Pesantren</span></h4>

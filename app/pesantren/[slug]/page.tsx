@@ -1,10 +1,26 @@
+import Informasi from '@/components/portal/detail/informasi'
+import Image from 'next/image'
 import React from 'react'
 
 const DetailPesantren = () => {
     return (
-        <div className='flex gap-8 mt-36'>
-            <div className='h-fit w-full py-12 px-8 border border-gray-300 space-y-8'>
-                <h1 className='text-3xl font-bold'>Pesantren Al-Hikam</h1>
+        <main className='grid grid-cols-7 gap-10 pt-36 pb-32'>
+            <div className='col-span-5 h-fit w-full py-6 px-9 border border-gray-300 space-y-8'>
+                <div className='w-full h-24 flex items-center justify-start gap-7'>
+                    <div className='h-full w-fit'>
+                        <Image
+                            src={"/pesantren/alhikam/alhikam-logo.png"}
+                            alt="logoPesantren"
+                            height={500}
+                            width={500}
+                            className='w-fit h-full object-cover'
+                        />
+                    </div>
+                    <div className='h-fit w-full'>
+                        <h2 className='text-black text-2xl font-semibold'>Pesantren Mahasiswa Al-Hikam</h2>
+                        <h3 className='text-stone-500 text-lg font-normal'>Jalan Cengger Ayam No.25, Lowokwaru</h3>
+                    </div>
+                </div>
                 <div className='space-y-4'>
                     <div className='bg-gray-300 h-[500px] w-full'>
 
@@ -33,31 +49,8 @@ const DetailPesantren = () => {
                     <h2 className='font-bold text-xl mt-12'>Media Pesantren</h2>
                 </div>
             </div>
-            <div className='w-72 h-fit border border-gray-300 p-4 sticky top-24'>
-                <h3 className='text-lg font-bold'>Informasi</h3>
-                <div className='flex justify-between'>
-                    <h6 className='font-semibold text-md'>Program</h6>
-                    <p className=''>Kitab</p>
-                </div>
-                <div className='flex justify-between'>
-                    <h6 className='font-semibold text-md'>Gender</h6>
-                    <p className=''>Laki-laki</p>
-                </div>
-                <div className='flex justify-between'>
-                    <h6 className='font-semibold text-md'>Tingkat</h6>
-                    <p className=''>Mahasiswa</p>
-                </div>
-                <div className='flex justify-between'>
-                    <h6 className='font-semibold text-md mr-4'>Pendiri</h6>
-                    <p className='text-end'>KH. Ahmad Hasyim Muzadi</p>
-                </div>
-                <div className='flex justify-between'>
-                    <h6 className='font-semibold text-md'>Pengasuh</h6>
-                    <p className=''>KH. Muh. Nafi</p>
-                </div>
-                <button className='btn btn-primary w-full mt-8'>Kontak</button>
-            </div>
-        </div>
+            <Informasi className='col-span-2 sticky top-28' />
+        </main>
     )
 }
 
